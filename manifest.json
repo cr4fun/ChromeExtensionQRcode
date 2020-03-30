@@ -1,0 +1,26 @@
+{
+	"name": "ChromeExtensionQRcode",
+	"description": "ChromeExtensionQRcode",
+	"version": "1.0",
+	"manifest_version": 2,
+	
+	"permissions": [
+		"notifications",
+		"tabs", 
+		"bookmarks", 
+		"declarativeWebRequest", 
+		"*://*/*"
+		],
+	"background": {
+		"persistent": true,
+		"scripts": [
+			"jquery.min.js"
+			]
+		},
+	//icon.png的大小为32x32 
+	"browser_action": {
+		"default_popup": "pop.html",
+		"default_icon" : "icon.png",
+		"default_title": "ChromeExtensionQRcode"
+	}
+}
